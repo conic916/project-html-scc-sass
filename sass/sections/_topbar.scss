@@ -1,0 +1,207 @@
+/* top-bar */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  background-color: $background;
+  top: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid $brand-main-color;
+
+  ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    height: 70px;
+    border-left: 1px solid $brand-main-color;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.wallet {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto;
+
+  #icons_wallet {
+    margin-left: 20px;
+    padding-right: 15px;
+    margin-top: 3px;
+    height: 17px;
+    fill: $color;
+
+    &:hover {
+      fill: none;
+    }
+  }
+}
+
+.sum {
+  display: inline-flex;
+  padding-top: 42px;
+
+
+  h2 {
+    color: $color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    justify-content: center;
+    padding: 0;
+    margin-top: -40px;
+  }
+}
+
+.arrow {
+  display: inline-flex;
+  padding: 30px 16px 26px 20px;
+  color: $color;
+}
+
+#arrow_down {
+  width: 15px;
+  height: 15px;
+  fill: $color;
+
+  &:hover {
+    fill: $paragraph-color;
+  }
+}
+
+.notif {
+  display: flex;
+  position: relative;
+  padding: 30px;
+  color: $color;
+  align-items: center;
+  justify-content: center;
+
+  #notification {
+    width: 20px;
+    height: 20px;
+    fill: $color;
+    position: absolute;
+
+    &:hover {
+      fill: $paragraph-color;
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 25px 20px 21px 15px;
+
+  #log {
+    width: 17px;
+    height: 17px;
+    fill: $color;
+  }
+}
+
+.name {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 42px;
+  color: $blue;
+  font-weight: 300;
+  width: 150px;
+  margin-top: -10px;
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.logout {
+  display: inline-flex;
+  padding: 31px 30px 25px 30px;
+
+  #quit {
+    width: 18px;
+    height: 18px;
+    display: block;
+    fill: $color;
+
+    &:hover {
+      fill: $paragraph-color;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  a {
+    display: block;
+  }
+
+  .wallet {
+    display: none;
+  }
+
+  .sum {
+    display: none;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  #arrow_down {
+    fill: none;
+  }
+
+  .notif {
+    display: block;
+    text-align: center;
+    padding: 15px 65px 30px 40px;
+
+    #notification:hover {
+      fill: none;
+    }
+  }
+
+  .login {
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .logout {
+    display: block;
+    text-align: center;
+    padding: 31px 55px 27px 40px;
+
+    #quit {
+      width: 18px;
+      height: 18px;
+      display: block;
+      fill: $color;
+
+      &:hover {
+        fill: none;
+      }
+    }
+  }
+}

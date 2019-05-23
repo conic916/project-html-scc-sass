@@ -1,0 +1,139 @@
+/* tabela drugi kontener */
+
+.buttons-links {
+  margin-left: 50%;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.last-button {
+  margin-top: 35px;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 817px;
+  margin: 0 auto;
+
+  tr {
+    &:hover {
+      background-color: $brand-main-color;
+    }
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid $brand-main-color;
+
+  }
+
+  a {
+    text-decoration: none;
+    display: nowrap;
+    color: $color;
+    font-size: $main-font-size;
+  }
+}
+
+.item p {
+  text-align: left;
+  transform: translateY(-14px);
+}
+
+.website {
+  position: relative;
+  text-decoration: none;
+  display: flex-end;
+  padding-left: 195px;
+  color: $color;
+}
+
+.hookup {
+  visibility: hidden;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  fill: $color;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: -15px;
+
+  &:hover {
+    fill: $hover-color;
+  }
+}
+
+.trash {
+  visibility: hidden;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  fill: $color;
+  position: absolute;
+  margin-left: 320px;
+  margin-top: -15px;
+
+  &:hover {
+    fill: $hover-color;
+  }
+}
+
+tr:hover .icons-link .trash {
+  visibility: visible;
+}
+
+tr:hover .icons-link .hookup {
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+
+  table {
+    border-collapse: collapse;
+    width: 50vw;
+
+    tr {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .website {
+    padding-left: 15%;
+  }
+
+  .buttons-links {
+    margin-left: 33vw;
+    margin-top: 4vh;
+    margin-bottom: 2vw;
+  }
+
+  .scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .scroll-wrapper table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  tr:hover .icons-link .trash {
+    visibility: hidden;
+  }
+
+  tr:hover .icons-link .hookup {
+    visibility: hidden;
+  }
+
+}

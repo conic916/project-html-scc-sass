@@ -1,0 +1,29 @@
+.button-general {
+	min-height: 40px;
+	font-size: 16px;
+	color: white;
+	font-weight: 300;
+	line-height: 42px;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	padding: 0 20px;
+}
+
+.orange-btn {
+	@extend .button-general;
+	background-color: orange;
+
+	&:hover {
+		background-color: grey;
+	}
+}
+.grey-btn {
+	@extend .button-general;
+	background-color: orange;
+	&:hover {
+		background-color: grey;
+	}
+}
+

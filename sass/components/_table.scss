@@ -1,0 +1,26 @@
+/* tabela pierwszy kontener */
+.statistic {
+    border-top: 1px solid $brand-main-color;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 17px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+    border-bottom: 1px solid $brand-main-color;
+    margin: 8px;
+    color: $color;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .stat {
+        width: 200px;
+    }
+}

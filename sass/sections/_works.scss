@@ -1,0 +1,37 @@
+/* sekcja ze zdieciem */
+.manager {
+  border-top: 1px solid $brand-main-color;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.contact .avatar {
+  padding-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.name-manager p {
+  position: absolute;
+  margin-left: 82px;
+  margin-top: -34px;
+}
+
+.status {
+  width: 11px;
+  height: 12px;
+  background-color: $stat-color;
+  position: absolute;
+  @include border-radius(50%);
+  top: 21px;
+  right: 133px;
+}
+
+/* for media */
+
+@media (max-width: 600px) {
+  .status {
+    position: absolute;
+    right: 115px;
+  }
+}

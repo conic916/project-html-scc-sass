@@ -1,0 +1,31 @@
+
+.payout {
+    border-top: 1px solid $brand-main-color;
+    width: 100%;
+  }
+  
+  .table_payout {
+    margin-top: 15px;
+    margin-bottom: 18px;
+  
+    .label {
+      padding: 25px;
+      color: $background-navigation;
+    }
+  
+    .label-table {
+      color: $color;
+    }
+  
+  th:nth-child(1) {
+    transform: translateX(3vw);
+  }
+  
+  th:nth-child(2) {
+    transform: translateX(0.5vw);
+  }
+  
+  th:nth-child(3) {
+    transform: translateX(1vw);
+  }
+  }
