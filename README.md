@@ -1,7 +1,6 @@
-# project-html-css-sass
-administrative panel for the banner and link management system
- https://katarzyna-da-silva.github.io/project-html-css-sass/
- 
+# administrative panel for the banner and link management system
+https://katarzyna-da-silva.github.io/Administrative-panel-for-the-banner-and-link-html-scss/
+
 - install my json file - copy the project and use npm install
 - open the site using localhost, use command "npm run watch"
 
